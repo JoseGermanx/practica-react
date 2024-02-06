@@ -1,21 +1,12 @@
 
 import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Titulo from './components/titulo/Titulo'
+import Contador from './components/contador/Contador'
 
 function App() {
 
   return (
     <>
-    <Navbar />
-    <Titulo />
-    <Titulo />
-    <Titulo />
-    <Titulo />
-    <Titulo />
-    <Titulo />
-    <Titulo />
-    <Titulo />
+    <Contador />
     </>
   )
 }
