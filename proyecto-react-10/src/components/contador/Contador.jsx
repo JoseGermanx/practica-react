@@ -21,6 +21,7 @@ const Contador = () => {
 
      const reset = () => {
         setContador(0)
+        setTitulo("TITULO RESETEADO")
      }
 
   return (
