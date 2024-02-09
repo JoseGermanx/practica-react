@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Boton from '../boton/Boton'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -12,20 +12,19 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
             <li className="nav-item active">
-                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Features</a>
+                <a className="nav-link" href="/about">Quienes somos</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Pricing</a>
+                <a className="nav-link" href="/contacto">Contacto</a>
             </li>
             <li className="nav-item">
-                <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
+                <Link to="/productos" className="nav-link">Productos</Link>
             </li>
             </ul>
         </div>
-        <Boton />
         </nav>
   )
 }
